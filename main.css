@@ -1,0 +1,91 @@
+body {
+    background-color: black;
+}
+
+.board td {
+        width: 90px;
+        height: 90px;
+        text-align: center;
+        font-size: 50px;
+        background-color: grey;  
+    }
+    
+    
+    /* .board td:hover {
+    } */
+    
+    .board td:hover {
+        animation: shake .1s infinite alternate;
+        background-color: rgb(112, 112, 189);
+        box-shadow: 5px 5px grey;
+        
+  }
+
+  ul {
+      list-style: none;
+      display: absolute;
+      
+  }
+  li {
+    display: inline-block;
+    
+    
+  }
+
+  input {
+      visibility: hidden;
+      
+  }
+label {
+    cursor: pointer;
+}
+
+  input:checked + label {
+      background: grey;
+      border: 1px solid;
+      box-shadow: 1px 1px;
+      border-radius: 5px;
+  }
+  
+  .level-select {
+      background-color: rgb(112, 112, 189);
+      height: 90px;   
+      font-size: 2rem;
+      margin: auto;
+      box-sizing: border-box;
+      display: absolute;
+      
+  }
+  .game-info {
+      font-size: 2rem;
+      display: absolute;
+      font-weight: bolder;
+      text-align: center;
+
+  }
+
+.game-time {
+    background-color: grey;
+    border-radius: 40px;
+    width: 80%;
+    margin: auto;
+  }
+ 
+
+
+.game-controller {
+    width: 700px;
+    height: 300px;
+    background-color: rgb(112, 112, 189);
+    border: grey 3px solid;
+    color: black;
+}
+
+
+@keyframes shake {
+
+    0% { transform: translate(-8px, -14px); }
+    33% { transform: translate(-10px, -14px); }
+    66% { transform: translate(-10px, -16px); }
+    100% { transform: translate(-8px, -16px); }
+  }

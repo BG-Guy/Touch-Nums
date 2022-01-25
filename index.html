@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Touch Numbers</title>
+</head>
+<body>
+    <div class="game-controller">
+        <div class="level-select">
+            <ul>
+                <li>
+                    <input onclick= "init()" name="difficulty" value="easy" id="easy" type="radio" checked >
+                    <label for="easy">Easy</label>
+                </li>
+                <li>
+                    <input onclick="init()" name="difficulty" value="medium" id="medium" type="radio" >            
+                    <label for="medium">Medium</label>
+                </li>
+                <li>
+                    <input onclick="init()" name="difficulty" value="hard" id="hard" type="radio" >
+                    <label for="hard">Hard</label>                    
+                </li>
+            </ul>
+
+        </div>
+        <div class="game-info">
+            <p class="game-time">GAME TIME: 0.000</p>
+            <p class="next-number">Next Number: </p>
+        </div>
+    </div> 
+    <table border="1" cellpadding="10">
+        <tbody class="board">
+
+        </tbody>
+</table>
+
+</body>
+<script src="./script.js"></script>
+</html>
